@@ -32,7 +32,7 @@ def get_uploaded_file():
 def compile_file(file_path):
     """Compile the uploaded file."""
     try:
-        output = subprocess.check_output(['python', 'compile.py', str(file_path)])
+        output = subprocess.check_output(['python3', 'compile.py', str(file_path)])
 
     except subprocess.TimeoutExpired:
         return None
